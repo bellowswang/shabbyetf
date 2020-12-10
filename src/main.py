@@ -85,7 +85,7 @@ if __name__ == "__main__":
     st.title('Shabby ETF ($SHAB): ' + str(deviation) + "%")
     st.write("Performance:")
     st.line_chart(df)
-    st.write("Current portfolio:")
+    st.write("Portfolio:")
     st.write(fig)
     st.write("Transaction Records:")
     st.write(trade_data)
