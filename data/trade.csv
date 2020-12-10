@@ -1,4 +1,3 @@
-date;symbol;side;amount;analyst
-2020-12-01;NIO;buy;1;sao
-2020-12-07;LI;buy;1;wang
-2020-12-08;NIO;sell;1;sao
+date;symbol;side;amount;price;fee;analyst
+2020-12-10;CHWY;buy;1;78.88;0.5;wang
+2020-12-10;SPLK;buy;1;154.18;0.5;wang
