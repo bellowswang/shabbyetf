@@ -59,7 +59,7 @@ if __name__ == "__main__":
     symbols = trade_data['symbol'].unique().tolist()
     trade_dates = trade_data['date'].unique().tolist()
     symbols_str = " ".join(symbols)
-    stock_data = yf.download(symbols_str, start=min(trade_data['date']))
+    stock_data = yf.download(symbols_str, start='2020-12-09')
     dates = stock_data.index.tolist()
     amount_dic = {k: 0 for k in symbols}
     cash = 605
