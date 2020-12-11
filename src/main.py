@@ -78,7 +78,7 @@ if __name__ == "__main__":
     current_position = current_position_calculation(results['last_amount_dic'],
                                                     results['last_date'],
                                                     results['last_cash'])
-    deviation = round((results['last_value_total'] / cash - 1) * 100)
+    deviation = round((results['last_value_total'] / cash - 1) * 100, 1)
 
     # 3. Visualize the portfolio
     fig = px.pie(current_position, values='value', names='component')
