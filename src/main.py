@@ -87,5 +87,5 @@ if __name__ == "__main__":
     st.line_chart(df)
     st.write("Asset Allocation:")
     st.write(fig)
-    st.write("Transaction Records:")
+    st.write("Transaction History:")
     st.write(trade_data)
