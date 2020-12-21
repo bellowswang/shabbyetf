@@ -68,8 +68,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame({
         'date': dates,
-        'cash (USD)': results['cash_list'],
-        'stock (USD)': results['value_stock_list'],
         'total (USD)': results['value_total_list']
     })
     df = df.set_index('date')
