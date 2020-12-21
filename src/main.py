@@ -36,7 +36,8 @@ def accumulation(trade_data, trade_dates, stock_data, dates, amount_dic, cash):
                 last_date=date,
                 last_amount_dic=amount_dic,
                 last_cash=cash,
-                last_value_total=value_total)
+                last_value_total=value_total,
+                second_last_value_total = value_total_list[-2])
 
 
 def current_position_calculation(amount_dic, date, cash):
@@ -77,10 +78,13 @@ if __name__ == "__main__":
                                                     results['last_date'],
                                                     results['last_cash'])
     deviation = round((results['last_value_total'] / cash - 1) * 100, 1)
+    deviation_today = round((results['last_value_total'] / results['second_last_value_total'] - 1) * 100, 1)
 
     # 3. Visualize the portfolio
     fig = px.pie(current_position, values='value', names='component')
-    st.title('Shabby ETF ($SHAB): ' + str(deviation) + "%")
+    st.title('Shabby ETF ($SHAB)')
+    st.write('Since the 1st day: ' + str(deviation) + "%").
+    st.write('Since last close: ' + str(deviation_today) + '%')
     st.write("Asset Net Worth:")
     st.line_chart(df)
     st.write("Asset Allocation:")
