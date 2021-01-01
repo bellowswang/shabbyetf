@@ -83,8 +83,8 @@ if __name__ == "__main__":
     # 3. Visualize the portfolio
     fig = px.pie(current_position, values='value', names='component')
     st.title('Shabby ETF ($SHAB)')
-    st.write('Since the 1st day: ' + str(deviation) + "%")
-    st.write('Since last close: ' + str(deviation_today) + '%')
+    st.write('All %: ' + str(deviation) + "%")
+    st.write('1 Day %: ' + str(deviation_today) + '%')
     st.write("Asset Net Worth:")
     st.line_chart(df)
     st.write("Asset Allocation:")
