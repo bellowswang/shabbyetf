@@ -1,2 +1,2 @@
 # Shabby ETF (\$SHAB)
-This repo builds a [streamlit app](https://share.streamlit.io/bellowswang/shabbyetf/main/src/main.py) that tracks the performance, the portfolio, and the transaction records of $SHAB.
+This repo builds a [streamlit app](https://shabbyetf.streamlit.app/) that tracks the performance, the portfolio, and the transaction records of $SHAB.
